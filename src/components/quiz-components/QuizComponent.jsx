@@ -58,8 +58,8 @@ const QuizComponent = () => {
         </div> : <>
         <h2>{ index + 1 }. { question.question }</h2>
         <ul>
-            <li ref={option1} onClick={(e)=>{checkAnswer(e,1)}}>{ question.option2 }</li>
-            <li ref={option2} onClick={(e)=>{checkAnswer(e,2)}}>{ question.option1 }</li>
+            <li ref={option1} onClick={(e)=>{checkAnswer(e,1)}}>{ question.option1 }</li>
+            <li ref={option2} onClick={(e)=>{checkAnswer(e,2)}}>{ question.option2 }</li>
             <li ref={option3} onClick={(e)=>{checkAnswer(e,3)}}>{ question.option3 }</li>
             <li ref={option4} onClick={(e)=>{checkAnswer(e,4)}}>{ question.option4 }</li>
         </ul>

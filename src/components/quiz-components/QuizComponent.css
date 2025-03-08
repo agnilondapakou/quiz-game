@@ -1,28 +1,31 @@
-.container{
-    width: 640px;
+.container {
+    width: 90%;
+    max-width: 640px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px; 
     background: white;
     color: #262626;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
-    padding: 40px 50px;
+    padding: 30px 40px;
+    box-sizing: border-box; 
 }
 
-.container hr{
+.container hr {
     height: 2px;
     border: none;
     background: #707070;
 }
 
-.container h2{
-    font-size: 27px;
+.container h2 {
+    font-size: 23px;
     font-weight: 500;
+    text-align: center; 
 }
 
-.container ul li{
+.container ul li {
     display: flex;
     align-items: center;
     height: 70px;
@@ -32,23 +35,30 @@
     margin-bottom: 20px;
     font-size: 20px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-.container button{
+.container button {
     margin: auto;
-    width: 250px;
-    height: 65px;
+    width: 80%;
+    max-width: 250px; 
+    height: 60px;
     background: #000;
     color: white;
     font-size: 25px;
-    font-weight: 500px;
+    font-weight: 500;
     border-radius: 8px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-.container .index{
+.container button:hover {
+    background: #333;
+}
+
+.container .index {
     margin: auto;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .container .correct {
@@ -60,3 +70,34 @@
     background: #FFEBEB;
     border-color: rgb(255, 64, 64);
 }
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 25px;
+    }
+
+    .container ul li {
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .container button {
+        height: 50px;
+        font-size: 20px;
+    }
+} 
+
+@media (min-width: 768px) {
+    .container {
+        padding: 40px 50px;
+    }
+
+    .container h2 {
+        font-size: 25px;
+    }
+} 

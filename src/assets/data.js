@@ -1,12 +1,11 @@
 export const quizData = [
-    // only questions about ethereum blockchain
     {
-        question: "What is Ethereum?",
-        option1: "A blockchain platform",
-        option2: "A cryptocurrency",
-        option3: "A programming language",
-        option4: "All of the above",
-        answer: 1,
+        question: "What is the name of the blockchain that Ethereum is built on?",
+        option1: "Bitcoin",
+        option2: "Ethereum",
+        option3: "Ripple",
+        option4: "Litecoin",
+        answer: 2,
     },
     {
         question: "What is the native cryptocurrency of Ethereum?",
@@ -18,11 +17,11 @@ export const quizData = [
     },
     {
         question: "What is the name of the programming language used to write smart contracts on Ethereum?",
-        option1: "Solidity",
+        option1: "Java",
         option2: "Python",
-        option3: "Java",
+        option3: "Solidity",
         option4: "C++",
-        answer: 1,
+        answer: 3,
     },
     {
         question: "What is the name of the consensus algorithm used by Ethereum?",
@@ -30,14 +29,14 @@ export const quizData = [
         option2: "Proof of Stake",
         option3: "Delegated Proof of Stake",
         option4: "None of the above",
-        answer: 1,
+        answer: 2,
     },
     {
         question: "What is the name of the upgrade that will change Ethereum from a Proof of Work to a Proof of Stake consensus algorithm?",
         option1: "Serenity",
-        option2: "Metropolis",
+        option2: "Byzantium",
         option3: "Constantinople",
-        option4: "Byzantium",
-        answer: 1,
+        option4: "Metropolis",
+        answer: 4,
     }
 ]
